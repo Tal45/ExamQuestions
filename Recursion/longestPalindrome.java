@@ -2,7 +2,7 @@ public class longestPalindrome {
     public static int longestPalindrome(int[] arr) {
         return longestPalindrome(arr, 0, 1, 1);
     }
-    public static int longestPalindrome(int[] arr, int i, int j, int longest) {
+    private static int longestPalindrome(int[] arr, int i, int j, int longest) {
         if (i>=arr.length || i < 0 || j < 0 || j >= arr.length) {
             return longest;
         }
