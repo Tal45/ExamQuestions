@@ -6,16 +6,13 @@ public class longestPalindrome {
         if (i>=arr.length || i < 0 || j < 0 || j >= arr.length) {
             return longest;
         }
-        int try1 = 0, try2= 0, try3=0;
-        if (arr[i] == arr[j]) {
+        int try1 = 0, try2= 0;
+        if (arr[i] == arr[j])
              try2 = longestPalindrome(arr, i-1, j+1, j-i+1);
-             try3 = longestPalindrome(arr, i+2,j+1, longest); // continue forward to look for another palindrome
-        }
-        else {
-             try1 = longestPalindrome(arr, i+1, j+1, longest);
-        }
-        
-        return Math.max(try1, Math.max(try2,try3));
+       
+        try1 = longestPalindrome(arr, i+1, j+1, longest);
+    
+        return Math.max(try1, try2);
     }
     public static void main(String[] args) {
         int[] arr = {1, 3, 2, 3 ,10, 10 ,3 ,2 ,4};
