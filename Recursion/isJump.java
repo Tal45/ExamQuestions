@@ -30,8 +30,6 @@ public class isJump {
         System.out.println(strStep("adbrcfa", "abc"));
         System.out.println(strStep("abcfbaagcxabcd", "abc"));
         System.out.println(strStep("adcfbaagcxabcd", "abc"));
-        for (int i=0; i<10; i++) {
-            continue;
-        }
+        
     }
 }
