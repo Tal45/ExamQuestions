@@ -23,7 +23,7 @@ public class findMax {
             else
                 low = mid+1;
         }
-        return 0;
+        return 0; // dummy return
     }
     public static void main (String[] args) {
         int[] a = {65,70,-5,3,48,49,52};
