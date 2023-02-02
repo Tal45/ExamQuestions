@@ -9,7 +9,7 @@ public class findMax {
         while (low <= high) {
             mid = (low+high) / 2;
             if (mid == 0) {
-                if (arr[mid] > arr[mid]+1 && arr[mid] > arr[arr.length-1])
+                if (arr[mid] > arr[mid+1] && arr[mid] > arr[arr.length-1])
                     return mid;
             }
             else if (mid == arr.length-1) {
