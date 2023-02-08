@@ -1,13 +1,26 @@
+// time complexity O(logn)
 public class findMissingIndex {
     public static int findMissingIndex(int[] a) {
-        
         int diff = Math.min(a[2]-a[1], a[1]-a[0]);
+        int low = 0;
+        int high = a.length-1;
+        int mid=0;
+        int invalidValue=0;
         
-        for (int i = 0; i < a.length-1; i++) {
-            if (a[i+1] - a[i] != diff)
-                return i+1;
+        // arithmetic progressing finding An: 
+        // an = a1 + (n-1) * d
+        
+        while (low<=high) {
+            mid = (high+low)/2;
+            if (a[mid] == a[0] + (mid * diff)) {
+                low = mid+1;
+            }
+            else {
+                invalidValue = mid;
+                high = mid-1;
+            }
         }
-        return a.length;
+        return invalidValue;
     }
     public static void main(String[] args) {
         int[] a = {22,24,26,32,34,36,38,40};
