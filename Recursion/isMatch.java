@@ -15,10 +15,10 @@ public class isMatch {
             return true;
         if (s.charAt(0) != p.charAt(0)) {
             if (p.charAt(0) == '.')  // continue
-                isMatch(s.substring(1), p.substring(1), p.charAt(0)); 
+                return isMatch(s.substring(1), p.substring(1), p.charAt(0)); 
 
             else if (p.charAt(0) == '*' && (s.charAt(0) == prev || prev == '.'))// continue
-                isMatch(s.substring(1), p.substring(1), p.charAt(0));
+                return isMatch(s.substring(1), p.substring(1), p.charAt(0));
 
             else 
                 return false;
