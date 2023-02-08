@@ -1,4 +1,4 @@
-// Time complexity O(n)
+// Time complexity O(n^2)
 // 2017a 86
 public class countTriplets {
     public static int countTriplets (int[] arr, int num) {
