@@ -18,10 +18,8 @@ public class countTriplets {
                     i = low+1;
                 }
             }
-            else {
+            else 
                 high--;
-                i = low+1;
-            }
         }
         return count;
     }
