@@ -12,14 +12,12 @@ public class strictInc {
         while (i >= 0) {
             if (sum == k)
                 return true;
-            else if (sum > k){
-                if (sum - arr[i] >= k) {
-                    sum-=arr[i];
-                    i--;
-                }
-                else 
-                    i--;
+            if (sum - arr[i] >= k) {
+                sum-=arr[i];
+                i--;
             }
+            else 
+                i--;
         }
         return false;
     }
