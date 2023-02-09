@@ -13,7 +13,7 @@ public class findMax {
                     return mid;
             }
             else if (mid == arr.length-1) {
-                if (arr[mid] > 0 && arr[mid] > arr[mid-1])
+                if (arr[mid] > arr[0] && arr[mid] > arr[mid-1])
                     return mid;
             }
             if (arr[mid] > arr[mid-1] && arr[mid] > arr[mid+1]) 
