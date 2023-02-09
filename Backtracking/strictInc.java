@@ -1,4 +1,5 @@
 // 2023a 85
+//  Time complexity: O(n)
 public class strictInc {
     public static boolean strictInc (int[] arr, int k) {
         int i = arr.length-1;
