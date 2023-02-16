@@ -1,7 +1,7 @@
 // 2023a 85
 //  Time complexity: O(n)
-public class strictInc {
-    public static boolean strictInc (int[] arr, int k) {
+public class superInc {
+    public static boolean superInc (int[] arr, int k) {
         int i = arr.length-1;
         int sum = 0;
         
@@ -23,7 +23,7 @@ public class strictInc {
     }
     public static void main (String[] args) {
         int[] arr = {1,2,3,8,27};
-        System.out.println("For k = 30: "+strictInc(arr, 30));
-        System.out.println("For k = 7 "+strictInc(arr, 7));
+        System.out.println("For k = 30: "+superInc(arr, 30));
+        System.out.println("For k = 7 "+superInc(arr, 7));
     }
 }
